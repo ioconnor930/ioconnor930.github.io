@@ -285,10 +285,10 @@ h3.ih .ic{width:1.1rem;height:1.1rem;color:var(--light)}
 .ico{width:.9em;height:.9em;margin-left:.2rem;vertical-align:-.1em}
 
 /* ---------- post images ---------- */
-.series{max-width:58rem}
+.series{max-width:62rem}
 .series li{display:flex;gap:1.6rem;align-items:flex-start}
 .series .txt{flex:1;min-width:0}
-.shot{flex:none;width:13rem;margin:.2rem 0 0}
+.shot{flex:none;width:16rem;margin:.2rem 0 0}
 .shot img{display:block;width:100%;height:auto;border-radius:6px;border:1px solid var(--rule);background:var(--surface)}
 .shot a:hover img{border-color:var(--light)}
 .teaser{display:flex;gap:1.2rem;align-items:center}
@@ -299,3 +299,18 @@ h3.ih .ic{width:1.1rem;height:1.1rem;color:var(--light)}
   .shot{width:100%;max-width:22rem}
   .teaser{flex-direction:column;align-items:flex-start}
 }
+
+/* ---------- logos ---------- */
+.logos{display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin:1.2rem 0 0}
+.logos a{display:flex;align-items:center;height:3rem;padding:.45rem .75rem;background:#fff;border:1px solid var(--rule);border-radius:6px;text-decoration:none}
+.logos a.dark{background:#1d2b3e;border-color:#1d2b3e}
+.logos a:hover{border-color:var(--light)}
+.logos img{height:100%;width:auto;max-width:10rem;object-fit:contain;display:block}
+.logos span{display:none;font-size:.8rem;color:#16202e}
+.logos a.nologo img{display:none}
+.logos a.nologo span{display:inline}
+.logos a.dark.nologo span{color:#fff}
+.logos.small a{height:2.4rem;padding:.35rem .6rem}
+.footlogos{grid-column:1/-1}
+.footlogos .logos{margin:0}
+section > .logos{margin:0 0 1.6rem}
