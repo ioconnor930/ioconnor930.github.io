@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ian O’Connor — Research</title>
+<meta name="description" content="Research themes of Ian O’Connor: emerging devices for edge computing, silicon photonics for computing, design–technology co-optimization.">
+<meta property="og:title" content="Ian O’Connor — Research">
+<meta property="og:description" content="Research themes of Ian O’Connor: emerging devices for edge computing, silicon photonics for computing, design–technology co-optimization.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23173a5e'/%3E%3Ccircle cx='16' cy='13' r='6.5' fill='none' stroke='%237fd8cf' stroke-width='2.4'/%3E%3Cpath d='M3 24h26' stroke='%237fd8cf' stroke-width='2.4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&amp;family=Public+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">Ian O’Connor<small>Centrale Lyon · INL</small></a>
+    <nav class="guide" aria-label="Main">
+      <span class="bus" aria-hidden="true"></span><span class="pulse" aria-hidden="true"></span>
+      <ol><li><a href="index.html"><span class="ring" aria-hidden="true"></span>Home</a></li><li><a href="about.html"><span class="ring" aria-hidden="true"></span>About</a></li><li><a href="research.html" aria-current="page"><span class="ring" aria-hidden="true"></span>Research</a></li><li><a href="projects.html"><span class="ring" aria-hidden="true"></span>Projects</a></li><li><a href="team.html"><span class="ring" aria-hidden="true"></span>Team</a></li><li><a href="service.html"><span class="ring" aria-hidden="true"></span>Service</a></li><li><a href="teaching.html"><span class="ring" aria-hidden="true"></span>Teaching</a></li><li><a href="publications.html"><span class="ring" aria-hidden="true"></span>Publications</a></li><li><a href="writing.html"><span class="ring" aria-hidden="true"></span>Writing</a></li></ol>
+    </nav>
+    <button type="button" class="themebtn" aria-label="Switch between light and dark colours">Light / dark</button>
+  </div>
+</header>
+<main id="main" class="wrap">
+
+<header class="pagehead">
+  <h1>Research</h1>
+  <p>Moore’s law is slowing, and the search is on for devices and architectures that can replace or complement the CMOS transistor at the heart of data processing. My work, as joint head of the Electronics group at INL, explores what advanced, emerging and alternative devices can contribute, and develops the design methods needed to evaluate them at system level.</p>
+</header>
+
+<article class="theme" id="edge">
+  <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="14" y="44" width="36" height="8" rx="1"/><path d="M24 44V14M32 44V14M40 44V14"/><path class="hot" stroke="currentColor" d="M20 22h24M20 32h24" stroke-width="3"/></svg>
+  <div>
+    <h2>Energy-efficient edge computing with emerging devices</h2>
+    <p>Edge computing must deliver low-latency, secure processing as close as possible to the sensor, usually on a very limited energy budget. Reconfigurable and in-memory hardware accelerators placed in the acquisition or processing chain can reduce the load on the central core, and emerging devices offer new building blocks to make them far more efficient. They also invite us to revisit computing paradigms such as approximate, stochastic and neuromorphic computing.</p>
+    <p>Earlier work exploited the extra terminal of double-gate devices for reconfigurability. Current work focuses on 3D logic with vertical nanowire FETs, which favour regular structures such as majority or pass-gate logic, and on HfO₂-based ferroelectric capacitors and FeFETs. These CMOS-compatible, fast, low-power non-volatile devices enable fine-grain logic-in-memory, “normally-off” computing and new energy-efficient computing paradigms.</p>
+    <h3 class="sub">Highlights</h3>
+    <ul class="hl">
+      <li>Ultra-fine-grain reconfigurable cells and architectures on ambipolar double-gate CNTFETs and DG-MOSFETs, with patented interconnect topologies and dedicated logic synthesis and mapping flows</li>
+      <li>3D logic circuits and a 3D neural-network compute cube on vertical nanowire FETs</li>
+      <li>FeFET and FeMFET memories, logic-in-memory and in-memory accelerators for edge AI</li>
+      <li>Reconfigurable FETs and 2D van der Waals ferroelectric devices for AI electronics</li>
+    </ul>
+    <p class="muted">10 PhD theses and 4 postdocs. Projects: Nanosys, Multigrilles, Nanograin, Grilles-CMOS, LEGO, 3eFerro, FVLLMONTI, Ferro4EdgeAI, FerroFutures, MultiSPIN. Partners include CEA-LETI/LIST/IRAMIS, IMS, IM2NP, LIRMM, IEMN, LAAS, NaMLab, EPFL, Global TCAD Solutions, Polytechnique Montréal and the University of Notre Dame.</p>
+    <h3 class="sub">Selected publications</h3>
+    <ul class="selpubs"><li><div class="ti">Van der Waals Inverted-Floating-Gate Transistors for Artificial Intelligence Electronics</div><div>M. Soliman, C. Marchand, A. Mahmoudi, N. Kumar Rajak, T. Taniguchi, K. Watanabe, A. Gloppe, B. Doudin, D. Deleruyelle, <b>I. O’Connor</b>, A. Ouerghi, J.F. Dayen</div><div class="ve">ACS Nano, 19(19), 2025 · <a href="https://doi.org/10.1021/acsnano.5c03875">doi</a></div></li><li><div class="ti">3D Logic circuit design oriented electrothermal modeling of vertical junctionless nanowire FETs</div><div>S. Mannaa, A. Poittevin, C. Marchand, D. Deleruyelle, B. Deveautour, A. Bosio, <b>I. O’Connor</b>, et al.</div><div class="ve">IEEE J. Exploratory Solid-State Computational Devices and Circuits, vol. 9, no. 2, 2023 · <a href="https://doi.org/10.1109/JXCDC.2023.3309502">doi</a></div></li><li><div class="ti">A FeFET-based hybrid memory accessible by content and by address</div><div>C. Marchand, <b>I. O’Connor</b>, M. Cantan, S. Slesazeck, T. Mikolajick</div><div class="ve">IEEE J. Exploratory Solid-State Computational Devices and Circuits, vol. 8, no. 1, 2022 · <a href="https://doi.org/10.1109/JXCDC.2022.3168057">doi</a></div></li><li><div class="ti">CNTFET Modeling and Reconfigurable Logic Circuit Design</div><div><b>I. O’Connor</b>, J. Liu, F. Gaffiot, F. Prégaldiny, C. Lallement, C. Maneux, et al.</div><div class="ve">IEEE Trans. Circuits and Systems I, vol. 54, no. 11, 2007 · <a href="https://doi.org/10.1109/TCSI.2007.907835">doi</a></div></li></ul>
+    <ul class="tags"><li>VNWFET</li><li>FeFET / FeMFET</li><li>RFET</li><li>Logic-in-memory</li><li>Edge AI</li></ul>
+  </div>
+</article>
+
+<article class="theme" id="photonics">
+  <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 48h52"/><circle class="hot" cx="32" cy="30" r="13" stroke="currentColor" stroke-width="3"/><path d="M6 12h52"/></svg>
+  <div>
+    <h2>Silicon photonics for high-performance and in-network computing</h2>
+    <p>Distributed manycore architectures, now driven by AI workloads, need organized high-speed communication between processors with aggregate data rates beyond 100 TB/s. Metallic interconnect is highly inefficient in this role, at around 1 pJ/bit/mm. On-chip optical data transport is a potential solution, and this research assesses where and how it pays off.</p>
+    <p>Current work targets energy-efficient, broadcast-aware nanophotonic interconnect below 0.1 pJ/bit for an aggregate 100 TB/s, and photonic computing: matrix multiplication combining stochastic computing with phase-change materials on silicon photonics, reservoir computing, and photonic convolutional neural networks on lithium niobate on insulator.</p>
+    <h3 class="sub">Highlights</h3>
+    <ul class="hl">
+      <li>Among the first predictive assessments of optical interconnect performance per technology node</li>
+      <li>Passive and active optical network-on-chip topologies exploiting wavelength, and system-level models integrated with an industrial communication protocol</li>
+      <li>Thermal-aware laser control and wavelength allocation for energy-efficient nanophotonic interconnects</li>
+      <li>Photonic GEMM with phase-change materials and stochastic computing; photonic reservoir computing and CNNs</li>
+    </ul>
+    <p class="muted">14 PhD theses and 5 postdocs. Projects: Heteropt, PICMOS, WADIMOS, HELIOS, OpticALL2, Octane, Neuropuls, REDI, PEPR IA Adapting, CAMELIA LEAF and CHALICE. Partners include CEA-LETI, INRIA-IRISA, C2N, Kalray, IMEC, STMicroelectronics, Polytechnique Montréal, Concordia University, HKUST and RMIT.</p>
+    <h3 class="sub">Selected publications</h3>
+    <ul class="selpubs"><li><div class="ti">Reconfigurable Photonic GEMM Based on Phase-Change-Materials and Stochastic Computing</div><div>R. Cardoso, C. Zrounba, M. Abdalla, M. Gomes de Queiroz, P. Jimenez, <b>I. O’Connor</b>, S. Le Beux</div><div class="ve">IEEE/Optica J. Lightwave Technology, 2024 · <a href="https://doi.org/10.1109/JLT.2024.3421621">doi</a></div></li><li><div class="ti">Minimum complexity integrated photonic architecture for delay-based reservoir computing</div><div>M. Abdalla, C. Zrounba, R. Cardoso, P. Jimenez, G. Ren, A. Boes, A. Mitchell, A. Bosio, <b>I. O’Connor</b>, F. Pavanello</div><div class="ve">Optics Express, 31(7), 2023 · <a href="https://doi.org/10.1364/OE.484052">doi</a></div></li><li><div class="ti">Towards maximum energy efficiency in nanophotonic interconnects with thermal-aware on-chip laser tuning</div><div>H. Li, A. Fourmigue, S. Le Beux, <b>I. O’Connor</b>, G. Nicolescu</div><div class="ve">IEEE Trans. Emerging Topics in Computing, vol. 6, no. 3, 2018 · <a href="https://doi.org/10.1109/TETC.2016.2561623">doi</a></div></li><li><div class="ti">Systematic Simulation-Based Predictive Synthesis of Integrated Optical Interconnect</div><div><b>I. O’Connor</b>, F. Tissafi-Drissi, F. Gaffiot, J. Dambre, M. De Wilde, D. Stroobandt, J. Van Campenhout, D. Van Thourhout</div><div class="ve">IEEE Trans. VLSI Systems, vol. 15, no. 8, 2007</div></li></ul>
+    <ul class="tags"><li>Optical NoC</li><li>PCM photonics</li><li>LNOI</li><li>Photonic neural networks</li></ul>
+  </div>
+</article>
+
+<article class="theme" id="dtco">
+  <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="10" y="40" width="44" height="10" rx="1"/><rect x="16" y="27" width="32" height="10" rx="1"/><rect class="hot" x="22" y="14" width="20" height="10" rx="1" stroke="currentColor" stroke-width="3"/><path d="M32 24v3M32 37v3"/></svg>
+  <div>
+    <h2>Design–technology co-optimization for heterogeneous integrated systems</h2>
+    <p>“More-than-Moore” integration brings power management, sensing, actuation and biosensing from the board into the package or onto the chip, and 2.5D and monolithic 3D technologies multiply the opportunities. Design technology has not kept pace: partitioning, multi-physics simulation and co-design of heterogeneous parts remain open problems. The challenge is like searching for the centre of a vast three-dimensional maze with a flashlight and no map.</p>
+    <p>This work develops ways to predictively extract and exploit system and circuit design information across physical domains, and applies them to multi-physics sensor hubs, 3D ICs and, now, system–technology co-optimization of chiplet-based and near-memory computing architectures.</p>
+    <h3 class="sub">Highlights</h3>
+    <ul class="hl">
+      <li>Meta-optimization for early, deterministic floorplanning of 3D ICs, accounting for interconnect resources, traffic, thermal variation and cost</li>
+      <li>Patented predictive synthesis of multi-physics systems by hierarchical approximation and combination of sub-system Pareto fronts</li>
+      <li>Bounds on analog performance variability by combining design of experiments with the Cornish–Fisher expansion</li>
+      <li>DTCO/STCO methodologies for emerging memories and near-memory computing</li>
+    </ul>
+    <p class="muted">Projects under my coordination include Osmose, Auto-BAW, 3D-IDEAS, HELICITY, CHOOSE and PHOENIX, as well as the Eureka CATRENE projects 3DIM3 and H-Inception. Partners include CEA-LETI/LIST, STMicroelectronics, iCube, IMEP-LAHC, TIMA, TU Delft, Fraunhofer and Polytechnique Montréal.</p>
+    <h3 class="sub">Selected publications</h3>
+    <ul class="selpubs"><li><div class="ti">Frequency Design of Lossless Passive Electronic Filters: a state-space formulation of the direct synthesis approach</div><div>A. Perodou, A. Korniienko, G. Scorletti, M. Zarudniev, J.B. David, <b>I. O’Connor</b></div><div class="ve">IEEE Trans. Circuits and Systems I, vol. 68, no. 1, 2021 · <a href="https://doi.org/10.1109/TCSI.2020.3034300">doi</a></div></li><li><div class="ti">Analog IC variability bound estimation using the Cornish-Fisher expansion</div><div>H. Filiol, <b>I. O’Connor</b>, D. Morche</div><div class="ve">IEEE Trans. Computer-Aided Design of Integrated Circuits and Systems, vol. 31, no. 9, 2012</div></li><li><div class="ti">3D IC floorplanning: automating optimization settings and exploring new thermal-aware management techniques</div><div>F. Frantz, L. Labrak, <b>I. O’Connor</b></div><div class="ve">Microelectronics Journal, vol. 43, no. 6, 2012</div></li><li><div class="ti">Multi-physics Optimization Through Abstraction and Refinement</div><div>L. Labrak, <b>I. O’Connor</b></div><div class="ve">in Design Technology for Heterogeneous Embedded Systems, Springer, 2012</div></li></ul>
+    <ul class="tags"><li>DTCO / STCO</li><li>3D integration</li><li>Chiplets</li><li>Multi-physics synthesis</li></ul>
+  </div>
+</article>
+
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div><h2>Email</h2><p><a class="js-mail" data-show href="index.html">ian [dot] oconnor [at] ec-lyon [dot] fr</a></p></div>
+    <div><h2>Office</h2><address>Lyon Institute of Nanotechnology (INL)<br>Ecole Centrale de Lyon, Building F7, Office 207<br>36 avenue Guy de Collongue, 69134 Écully cedex, France</address></div>
+    <div><h2>Profiles</h2><p><a href="https://scholar.google.fr/citations?user=SDTr6iEAAAAJ&amp;hl=en">Google Scholar</a> · <a href="https://orcid.org/0000-0002-6238-9600">ORCID</a> · <a href="https://www.linkedin.com/in/ian-o-connor-7592153">LinkedIn</a> · <a href="https://dblp.org/search?q=Ian+O%27Connor">dblp</a></p></div>
+    <p class="small">Last updated November 2026.</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+
+</body>
+</html>

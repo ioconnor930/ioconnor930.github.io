@@ -1,23 +1,20 @@
-# ianoconnor.github.io — personal academic website
+# ioconnor930.github.io — personal academic website
 
-A single static page (no build step, no Jekyll/Hugo needed).
+Static site, no build step. Each page is a plain HTML file; shared pieces live in `assets/`.
 
-## Files
-- `index.html` — the whole site: text, styles, scripts, and the full publication list (422 entries, parsed from the October 2026 CV).
-- `assets/photo.jpg` — **add your portrait here** (portrait ratio ~4:5). Until then a monogram is shown.
-- `assets/cv.pdf` — **add a public version of your CV here** (suggest removing home address and date of birth).
-- `.nojekyll` — tells GitHub Pages to serve files as-is.
+## Pages
+index.html (home), about.html (biography + career timeline), research.html, projects.html (project timeline + tables),
+team.html, service.html, teaching.html, publications.html, writing.html (the Co-Optimized Silicon Stack series; posts are listed in build order inside the page — to add a post, copy one <li> block)
 
-## Publish on GitHub Pages
-1. Create a public repository named exactly `<your-github-username>.github.io`.
-2. Upload the contents of this folder (index.html, assets/, .nojekyll, README.md) to the `main` branch.
-3. In the repository: Settings → Pages → Source: "Deploy from a branch", Branch: `main`, folder `/ (root)`.
-4. After a minute the site is live at `https://<your-github-username>.github.io/`.
+## Files you are most likely to edit
+- `assets/publications.js` — the publication list, one entry per line.
+  Fields: t type (journal, book, chapter, invited, conference, patent, talk, outreach), y year, ti title, a authors, v venue,
+  d DOI (optional), u URL (optional), aw:1 Best Paper Award (optional). Order does not matter.
+- `assets/timeline-data.js` — career, responsibilities, projects and events shown in both timelines and in the project tables.
+  Dates are "YYYY" or "YYYY-MM"; e:null means ongoing; pt:true is a one-off event; wp:true draws a project as an outline (WP/partner role).
+- `assets/citations.js` — Google Scholar figures. Add per-year counts to `byYear` and the bar chart appears on the home page.
+- `assets/photo.jpg` — your portrait (square). `assets/cv.pdf` — public CV (no home address or date of birth).
+- Text on the other pages: edit the HTML directly. The menu appears in every page; if you add a page, copy the menu into all of them.
 
-## Updating
-- **Text sections** (About, Research, Projects, Team, Service, Teaching, Contact): edit the HTML directly in `index.html`; each section is marked with a comment like `<!-- ===== PROJECTS ===== -->`.
-- **Publications**: near the end of `index.html` is `<script id="pubdata" type="application/json">[...]</script>`. Each entry looks like
-  `{"t":"journal","y":2026,"ti":"Title","a":"A. Author, I. O'Connor","v":"Journal, vol., pp., Month 2026","d":"10.xxxx/doi"}`
-  - `t` type: journal, book, chapter, invited, conference, patent, talk, outreach
-  - `d` (DOI), `u` (URL) and `aw:1` (Best Paper Award) are optional.
-  Add new entries anywhere in the array; the page sorts by year.
+## Publishing changes
+On GitHub: Add file → Upload files, drop the changed files (or the whole folder), Commit changes. The site updates within a minute or two.

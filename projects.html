@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ian O’Connor — Projects</title>
+<meta name="description" content="Research projects of Ian O’Connor: regional, national and European projects since 2001, with roles and timeline.">
+<meta property="og:title" content="Ian O’Connor — Projects">
+<meta property="og:description" content="Research projects of Ian O’Connor: regional, national and European projects since 2001, with roles and timeline.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23173a5e'/%3E%3Ccircle cx='16' cy='13' r='6.5' fill='none' stroke='%237fd8cf' stroke-width='2.4'/%3E%3Cpath d='M3 24h26' stroke='%237fd8cf' stroke-width='2.4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&amp;family=Public+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">Ian O’Connor<small>Centrale Lyon · INL</small></a>
+    <nav class="guide" aria-label="Main">
+      <span class="bus" aria-hidden="true"></span><span class="pulse" aria-hidden="true"></span>
+      <ol><li><a href="index.html"><span class="ring" aria-hidden="true"></span>Home</a></li><li><a href="about.html"><span class="ring" aria-hidden="true"></span>About</a></li><li><a href="research.html"><span class="ring" aria-hidden="true"></span>Research</a></li><li><a href="projects.html" aria-current="page"><span class="ring" aria-hidden="true"></span>Projects</a></li><li><a href="team.html"><span class="ring" aria-hidden="true"></span>Team</a></li><li><a href="service.html"><span class="ring" aria-hidden="true"></span>Service</a></li><li><a href="teaching.html"><span class="ring" aria-hidden="true"></span>Teaching</a></li><li><a href="publications.html"><span class="ring" aria-hidden="true"></span>Publications</a></li><li><a href="writing.html"><span class="ring" aria-hidden="true"></span>Writing</a></li></ol>
+    </nav>
+    <button type="button" class="themebtn" aria-label="Switch between light and dark colours">Light / dark</button>
+  </div>
+</header>
+<main id="main" class="wrap">
+
+<header class="pagehead">
+  <h1>Projects</h1>
+  <p>I have been work-package leader in 19 regional, national and European projects and scientific coordinator of nine. Filled bars mark projects where I coordinated the project or INL’s part of it; outlined bars mark work-package or partner roles.</p>
+</header>
+
+<section aria-labelledby="h-ptl">
+  <h2 id="h-ptl">Project timeline</h2>
+  <div id="tl-proj"></div>
+</section>
+
+<section aria-labelledby="h-cur">
+  <h2 id="h-cur">Current projects</h2>
+  <div class="table-wrap"><table id="cur"><thead><tr><th>Project</th><th>Period</th><th>My role</th></tr></thead><tbody></tbody></table></div>
+  <p class="muted">Also partner in the Horizon Europe project <a href="https://neuropuls.eu/">Neuropuls</a> on secure neuromorphic accelerators using phase-change-material-augmented silicon photonics.</p>
+</section>
+
+<section aria-labelledby="h-past">
+  <h2 id="h-past">Past projects</h2>
+  <div class="table-wrap"><table id="past"><thead><tr><th>Project</th><th>Period</th><th>My role</th></tr></thead><tbody></tbody></table></div>
+</section>
+
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div><h2>Email</h2><p><a class="js-mail" data-show href="index.html">ian [dot] oconnor [at] ec-lyon [dot] fr</a></p></div>
+    <div><h2>Office</h2><address>Lyon Institute of Nanotechnology (INL)<br>Ecole Centrale de Lyon, Building F7, Office 207<br>36 avenue Guy de Collongue, 69134 Écully cedex, France</address></div>
+    <div><h2>Profiles</h2><p><a href="https://scholar.google.fr/citations?user=SDTr6iEAAAAJ&amp;hl=en">Google Scholar</a> · <a href="https://orcid.org/0000-0002-6238-9600">ORCID</a> · <a href="https://www.linkedin.com/in/ian-o-connor-7592153">LinkedIn</a> · <a href="https://dblp.org/search?q=Ian+O%27Connor">dblp</a></p></div>
+    <p class="small">Last updated November 2026.</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+<script src="assets/timeline.js"></script>
+<script src="assets/timeline-data.js"></script>
+<script>
+(function(){
+  var P=TL_DATA.filter(function(d){return d.lane==="proj";}).map(function(d){return Object.assign({},d,{lane:d.scope});});
+  IOCTimeline(document.getElementById("tl-proj"),{
+    lanes:[{id:"eu",label:"European and international",color:"--lane-career"},{id:"nat",label:"National",color:"--lane-proj"},{id:"reg",label:"Regional",color:"--lane-event"}],
+    items:P, from:2000, to:2032, view:[2000,2032], mobileView:[2016,2032],
+    presets:[["All years",2000,2032],["Since 2016",2016,2032]],
+    select:"PHOENIX"
+  });
+  var now=new Date().getFullYear();
+  function row(d){return '<tr><td><strong>'+IOC.esc(d.label)+'</strong><br><span class="muted">'+IOC.esc(d.detail||"")+'</span></td><td class="when">'+d.s+'–'+(d.e||"")+'</td><td>'+IOC.esc(d.role||"")+'</td></tr>';}
+  var cur=P.filter(function(d){return +String(d.e).slice(0,4)>=now;}).sort(function(a,b){return b.s.localeCompare(a.s);});
+  var past=P.filter(function(d){return +String(d.e).slice(0,4)<now;}).sort(function(a,b){return b.s.localeCompare(a.s);});
+  document.querySelector("#cur tbody").innerHTML=cur.map(row).join("");
+  document.querySelector("#past tbody").innerHTML=past.map(row).join("");
+})();
+</script>
+</body>
+</html>

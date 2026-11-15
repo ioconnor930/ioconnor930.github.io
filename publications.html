@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ian O’Connor — Publications</title>
+<meta name="description" content="Complete list of publications of Ian O’Connor: journal articles, books, chapters, conference papers, patents and talks.">
+<meta property="og:title" content="Ian O’Connor — Publications">
+<meta property="og:description" content="Complete list of publications of Ian O’Connor: journal articles, books, chapters, conference papers, patents and talks.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23173a5e'/%3E%3Ccircle cx='16' cy='13' r='6.5' fill='none' stroke='%237fd8cf' stroke-width='2.4'/%3E%3Cpath d='M3 24h26' stroke='%237fd8cf' stroke-width='2.4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&amp;family=Public+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html">Ian O’Connor<small>Centrale Lyon · INL</small></a>
+    <nav class="guide" aria-label="Main">
+      <span class="bus" aria-hidden="true"></span><span class="pulse" aria-hidden="true"></span>
+      <ol><li><a href="index.html"><span class="ring" aria-hidden="true"></span>Home</a></li><li><a href="about.html"><span class="ring" aria-hidden="true"></span>About</a></li><li><a href="research.html"><span class="ring" aria-hidden="true"></span>Research</a></li><li><a href="projects.html"><span class="ring" aria-hidden="true"></span>Projects</a></li><li><a href="team.html"><span class="ring" aria-hidden="true"></span>Team</a></li><li><a href="service.html"><span class="ring" aria-hidden="true"></span>Service</a></li><li><a href="teaching.html"><span class="ring" aria-hidden="true"></span>Teaching</a></li><li><a href="publications.html" aria-current="page"><span class="ring" aria-hidden="true"></span>Publications</a></li><li><a href="writing.html"><span class="ring" aria-hidden="true"></span>Writing</a></li></ol>
+    </nav>
+    <button type="button" class="themebtn" aria-label="Switch between light and dark colours">Light / dark</button>
+  </div>
+</header>
+<main id="main" class="wrap">
+
+<header class="pagehead">
+  <h1>Publications</h1>
+  <p>The complete list from my CV: 66 journal articles, 4 books, 22 book chapters, 235 conference papers including 52 invited, 7 patents, and talks. Filter by type, or search by title, co-author, venue or year. Citation metrics are on the <a href="index.html">home page</a> and <a href="https://scholar.google.fr/citations?user=SDTr6iEAAAAJ&amp;hl=en">Google Scholar</a>.</p>
+</header>
+<section aria-label="Publication list" style="padding-top:2rem">
+  <div class="filters" id="filters" role="group" aria-label="Publication type"></div>
+  <div class="searchrow">
+    <label for="q" class="sr">Search publications</label>
+    <input id="q" type="search" placeholder="Search, e.g. ferroelectric, Le Beux, DATE 2024" autocomplete="off">
+    <output id="count" aria-live="polite"></output>
+  </div>
+  <div id="publist"></div>
+  <button type="button" class="more" id="more" hidden>Show more</button>
+</section>
+
+</main>
+<footer class="foot">
+  <div class="wrap">
+    <div><h2>Email</h2><p><a class="js-mail" data-show href="index.html">ian [dot] oconnor [at] ec-lyon [dot] fr</a></p></div>
+    <div><h2>Office</h2><address>Lyon Institute of Nanotechnology (INL)<br>Ecole Centrale de Lyon, Building F7, Office 207<br>36 avenue Guy de Collongue, 69134 Écully cedex, France</address></div>
+    <div><h2>Profiles</h2><p><a href="https://scholar.google.fr/citations?user=SDTr6iEAAAAJ&amp;hl=en">Google Scholar</a> · <a href="https://orcid.org/0000-0002-6238-9600">ORCID</a> · <a href="https://www.linkedin.com/in/ian-o-connor-7592153">LinkedIn</a> · <a href="https://dblp.org/search?q=Ian+O%27Connor">dblp</a></p></div>
+    <p class="small">Last updated November 2026.</p>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+<script src="assets/publications.js"></script>
+<script>
+(function(){
+  var data=PUBS.slice().sort(function(a,b){return (b.y||0)-(a.y||0);});
+  var TYPES=[["all","All"],["journal","Journal articles"],["book","Books"],["chapter","Book chapters"],["invited","Invited conference papers"],["conference","Conference papers"],["patent","Patents"],["talk","Talks and workshops"],["outreach","Outreach"]];
+  var SING={journal:"Journal article",book:"Book",chapter:"Book chapter",invited:"Invited conference paper",conference:"Conference paper",patent:"Patent",talk:"Talk or workshop",outreach:"Outreach"};
+  var start=(location.hash||"").replace("#","");
+  var state={type:SING[start]?start:"journal",q:"",shown:60};
+  var fs=document.getElementById("filters");
+  TYPES.forEach(function(t){
+    var n=t[0]==="all"?data.length:data.filter(function(p){return p.t===t[0];}).length; if(!n) return;
+    var b=document.createElement("button"); b.type="button"; b.className="chip"; b.dataset.t=t[0];
+    b.innerHTML=t[1]+'<span class="c">'+n+'</span>'; b.setAttribute("aria-pressed",t[0]===state.type);
+    b.addEventListener("click",function(){state.type=t[0];state.shown=60;
+      fs.querySelectorAll(".chip").forEach(function(c){c.setAttribute("aria-pressed",c.dataset.t===state.type);}); render();});
+    fs.appendChild(b);
+  });
+  function norm(s){return String(s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[’']/g,"'");}
+  data.forEach(function(p){p._s=norm([p.ti,p.a,p.v,p.y].join(" "));});
+  var list=document.getElementById("publist"), more=document.getElementById("more"), count=document.getElementById("count");
+  function render(){
+    var terms=norm(state.q).split(/\s+/).filter(Boolean);
+    var res=data.filter(function(p){ if(state.type!=="all"&&p.t!==state.type) return false; return terms.every(function(t){return p._s.indexOf(t)>-1;}); });
+    count.textContent=res.length+(res.length===1?" item":" items");
+    if(!res.length){list.innerHTML='<p class="empty">Nothing matches “'+IOC.esc(state.q)+'”. Try fewer words, or choose “All”.</p>';more.hidden=true;return;}
+    var h="",yr=null;
+    res.slice(0,state.shown).forEach(function(p){
+      if(p.y!==yr){ if(yr!==null) h+="</ul>"; yr=p.y; h+='<h2 class="yr">'+(yr||"Undated")+'</h2><ul class="pubs">'; }
+      var l=""; if(p.d) l+='<a href="https://doi.org/'+IOC.esc(p.d)+'">doi:'+IOC.esc(p.d)+'</a>'; if(p.u) l+='<a href="'+IOC.esc(p.u)+'">Link</a>';
+      h+='<li class="pub"><div class="ti">'+IOC.esc(p.ti)+'</div>'+(p.a?'<div class="au">'+IOC.authors(p.a)+'</div>':'')+(p.v?'<div class="ve">'+IOC.esc(p.v)+'</div>':'')+
+        '<div class="meta">'+(state.type==="all"?'<span class="kind">'+SING[p.t]+'</span>':'')+(p.aw?'<span class="award">Best Paper Award</span>':'')+l+'</div></li>';
+    });
+    list.innerHTML=h+"</ul>"; more.hidden=res.length<=state.shown;
+    more.textContent="Show "+Math.min(60,res.length-state.shown)+" more of "+(res.length-state.shown)+" remaining";
+  }
+  more.addEventListener("click",function(){state.shown+=60;render();});
+  var tmr; document.getElementById("q").addEventListener("input",function(e){clearTimeout(tmr);tmr=setTimeout(function(){state.q=e.target.value;state.shown=60;render();},120);});
+  render();
+})();
+</script>
+</body>
+</html>
