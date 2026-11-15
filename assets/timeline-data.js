@@ -10,7 +10,7 @@ window.TL_DATA = [
 {lane:"career",label:"Senior CAD Engineer, Philips Semiconductors",s:"1997",e:"1998",detail:"Design Technology Centre, Philips (now NXP) Semiconductors, Southampton (UK)."},
 {lane:"career",label:"Associate Professor, Centrale Lyon",s:"1998",e:"2007",detail:"Department of Electronic, Electrical and Control Engineering, Ecole Centrale de Lyon."},
 {lane:"career",label:"Habilitation (HDR)",s:"2005-10",pt:true,detail:"“Physically heterogeneous systems on chip: design methodologies and optical interconnect systems”, Ecole Centrale de Lyon."},
-{lane:"career",label:"Professor, Centrale Lyon",s:"2007",e:null,full:"Distinguished Professor for Heterogeneous and Nanoelectronics Systems Design, Ecole Centrale de Lyon",detail:"Full professor since 2007, now Distinguished Professor."},
+{lane:"career",label:"Professor, Centrale Lyon",s:"2007",e:null,full:"Distinguished Professor of Cross-Layer Design for Energy-Efficient Computing, Ecole Centrale de Lyon",detail:"Full professor since 2007, now Distinguished Professor."},
 {lane:"career",label:"Adjunct Professor, Polytechnique Montréal",s:"2008",e:"2022",detail:"Computer and Software Engineering Department, Ecole Polytechnique de Montréal (CA). Visiting professor there in 2005 and 2008."},
 
 /* ---------------- Responsibilities ---------------- */
