@@ -311,3 +311,86 @@ h3.ih .ic{width:1.1rem;height:1.1rem;color:var(--light)}
 .footlogos{grid-column:1/-1;padding-top:.4rem}
 section > .logos{margin:-.2rem 0 1.6rem}
 .foot .small{max-width:none}
+
+/* ===================== redesign: warm accent ===================== */
+:root{--warm:#d9541e;--warm-soft:#fbe9e1}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--warm:#ff8a5b;--warm-soft:#3a2219}}
+:root[data-theme="dark"]{--warm:#ff8a5b;--warm-soft:#3a2219}
+body{overflow-x:clip}
+
+/* ===================== dark hero band ===================== */
+.hero-band{position:relative;margin:0 calc(50% - 50vw);padding:0 calc(50vw - 50%);
+  background:radial-gradient(120% 140% at 85% 20%,#1f4a74 0%,#123050 45%,#0b1d33 100%);color:#e9f0f7;overflow:hidden;isolation:isolate}
+.hero-band .hero{position:relative;z-index:1;padding:3.4rem 0 4.2rem}
+.hero-guide{position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none}
+.g-bus{stroke:#5fd0c4;stroke-opacity:.35;stroke-width:4;fill:none}
+.g-bus.thin{stroke-width:3;stroke-opacity:.16}
+.g-ring{stroke:#5fd0c4;stroke-opacity:.32;stroke-width:4;fill:none}
+.g-ring.lit{stroke:#9ff5ea;stroke-opacity:.75;animation:ringglow 7s ease-in-out infinite}
+@keyframes ringglow{0%,30%,100%{stroke-opacity:.32}45%{stroke-opacity:.9}60%{stroke-opacity:.45}}
+.g-ring.small{stroke-opacity:.18;stroke-width:3}
+.g-pulse{animation:travel 7s linear infinite}
+.g-pulse.late{animation-duration:11s;animation-delay:-4s;opacity:.7}
+@keyframes travel{from{transform:translateX(0)}to{transform:translateX(2700px)}}
+@media (prefers-reduced-motion:reduce){.g-pulse{animation:none;display:none}.g-ring.lit{animation:none}}
+.hero-band h1{color:#fff}
+.hero-band .role{color:#8ff0e4}
+.hero-band .aff,.hero-band .aff a{color:#c3d1df}
+.hero-band .aff a:hover{color:#fff}
+.hero-band .links a{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.28);color:#fff}
+.hero-band .links a:hover{border-color:#8ff0e4;color:#8ff0e4}
+.hero-band .links a.primary{background:#0d7f78;border-color:#0d7f78;color:#fff}
+.hero-band .links a.primary:hover{background:#12a196;border-color:#12a196;color:#fff}
+.hero-band .portrait{border-radius:50%;box-shadow:0 0 0 4px rgba(95,208,196,.55),0 0 40px rgba(95,208,196,.25)}
+.hero-band .logos a{border-color:transparent}
+main > .hero-band:first-child{margin-top:0}
+
+/* ===================== news strip ===================== */
+.news{padding-top:2.6rem}
+.news h2{margin-bottom:.9rem}
+.newslist{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+.newslist li{background:var(--surface);border:1px solid var(--rule);border-top:3px solid var(--warm);border-radius:6px;padding:.9rem 1rem}
+.newslist time{display:inline-block;font:600 .74rem var(--sans);letter-spacing:.04em;text-transform:uppercase;color:var(--warm);background:var(--warm-soft);padding:.1rem .45rem;border-radius:3px;margin-bottom:.45rem}
+.newslist p{margin:0;font-size:.93rem;line-height:1.5}
+main section.news + section{margin-top:2.6rem}
+
+/* warm accent in a few places */
+.tl-now{background:var(--warm)}
+.tl-today{background:var(--warm)}
+.award{color:var(--warm)}
+.series li:last-child .ring{border-color:var(--warm);background:var(--warm-soft);box-shadow:0 0 0 4px color-mix(in srgb,var(--warm) 18%,transparent)}
+
+@media (max-width:960px){
+  .newslist{grid-template-columns:1fr 1fr}
+  .hero-band .hero{padding:2.2rem 0 2rem}
+}
+@media (max-width:600px){ .newslist{grid-template-columns:1fr} }
+@media (max-width:760px){ .g-ring{display:none} .hero-band .hero{padding-bottom:3rem} }
+
+/* ===================== redesign: inner pages ===================== */
+.pagehead-band .pagehead{position:relative;z-index:1;padding:2.6rem 0 3.4rem}
+.pagehead-band h1{color:#fff;margin-bottom:.8rem}
+.pagehead-band .pagehead p{color:#c3d1df;max-width:68ch}
+.pagehead-band .pagehead a{color:#8ff0e4}
+main > .pagehead-band + section{padding-top:2.8rem}
+/* research illustrations */
+.theme-img{float:right;width:min(20rem,42%);margin:.3rem 0 1rem 1.6rem}
+.theme-img img{display:block;width:100%;border-radius:8px;border:1px solid var(--rule)}
+.theme-img figcaption{font-size:.74rem;color:var(--muted);margin-top:.35rem}
+.theme::after{content:"";display:block;clear:both}
+@media (max-width:700px){.theme-img{float:none;width:100%;margin:.4rem 0 1rem}}
+/* teaching cards */
+.courses{list-style:none;margin:0 0 1rem;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(16rem,1fr));gap:1rem}
+.course{background:var(--surface);border:1px solid var(--rule);border-left:3px solid var(--light);border-radius:6px;padding:.9rem 1rem}
+.course .lvl{display:inline-block;font:600 .72rem var(--sans);letter-spacing:.04em;text-transform:uppercase;color:var(--light);background:var(--light-soft);padding:.1rem .45rem;border-radius:3px}
+.course h3{font-size:1.02rem;margin:.5rem 0 .3rem;color:var(--ink)}
+.course p{margin:0;font-size:.86rem;color:var(--muted)}
+.course .how b{color:var(--warm);font-weight:600}
+/* dark footer, matching the bands */
+.foot{background:#0b1d33;border-top:0;color:#c3d1df}
+.foot h2{color:#fff}
+.foot h2.ih .ic{color:#5fd0c4}
+.foot address{color:#c3d1df}
+.foot a{color:#8ff0e4}
+.foot .small{border-top-color:rgba(255,255,255,.15);color:#8fa1b5}
+.foot .logos a{border-color:transparent}

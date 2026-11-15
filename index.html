@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&amp;family=Public+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=202611151740">
+<link rel="stylesheet" href="assets/style.css?v=202611151803">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -27,7 +27,21 @@
 </header>
 <main id="main" class="wrap">
 
-<header class="hero">
+<header class="hero-band">
+  <svg class="hero-guide" viewBox="0 0 1600 420" preserveAspectRatio="xMaxYMax slice" aria-hidden="true">
+    <defs>
+      <linearGradient id="pulse" x1="0" x2="1"><stop offset="0" stop-color="#5fd0c4" stop-opacity="0"/><stop offset=".5" stop-color="#9ff5ea" stop-opacity="1"/><stop offset="1" stop-color="#5fd0c4" stop-opacity="0"/></linearGradient>
+      <filter id="glow" x="-50%" y="-200%" width="200%" height="500%"><feGaussianBlur stdDeviation="3"/></filter>
+    </defs>
+    <path class="g-bus" d="M-400 404 H1620"/>
+    <circle class="g-ring" cx="1120" cy="367" r="30"/>
+    <circle class="g-ring" cx="1210" cy="367" r="30"/>
+    <circle class="g-ring lit" cx="1300" cy="367" r="30"/>
+    <circle class="g-ring" cx="1390" cy="367" r="30"/>
+    <circle class="g-ring" cx="1480" cy="367" r="30"/>
+    <rect class="g-pulse" x="-700" y="400" width="320" height="8" rx="4" fill="url(#pulse)" filter="url(#glow)"/>
+  </svg>
+  <div class="hero">
   <div>
     <h1>Ian O’Connor</h1>
     <p class="role">Distinguished Professor for Heterogeneous and Nanoelectronics Systems Design</p>
@@ -44,7 +58,18 @@
     <div class="logos"><a href="https://www.ec-lyon.fr/en" title="Centrale Lyon"><img src="assets/logos/ecl.png" alt="Centrale Lyon" height="34" style="height:34px;width:auto" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none">Centrale Lyon</span></a><a href="https://inl.cnrs.fr/en/" title="Lyon Institute of Nanotechnology (INL)"><img src="assets/logos/inl.png" alt="Lyon Institute of Nanotechnology (INL)" height="34" style="height:34px;width:auto" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none">Lyon Institute of Nanotechnology (INL)</span></a><a href="https://www.cnrs.fr/en" title="CNRS"><img src="https://inl.cnrs.fr/wp-content/uploads/2019/02/logo-cnrs.png" alt="CNRS" height="34" style="height:34px;width:auto" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none';this.nextElementSibling.style.display='inline'"><span style="display:none">CNRS</span></a></div>
   </div>
   <div class="portrait"><span class="initials" aria-hidden="true">IO</span><img src="assets/photo.jpg" alt="Portrait of Ian O’Connor" onerror="this.remove()"></div>
+  </div>
 </header>
+
+<section class="news" aria-labelledby="h-news">
+  <h2 id="h-news">News</h2>
+  <ol class="newslist">
+    <li><time datetime="2027-01">Jan 2027</time><p>Invited talk at the NEUROCOM workshop, <strong>HiPEAC 2027</strong>, Glasgow.</p></li>
+    <li><time datetime="2026-11">Nov 2026</time><p><a href="writing.html">The Co-Optimized Silicon Stack</a> concludes after 12 weekly posts with <em>From PPA to PPV</em>.</p></li>
+    <li><time datetime="2026-10">Oct 2026</time><p>General co-chair of <strong>VLSI-SoC 2026</strong> in Limassol, with two group papers on ferroelectric memories and DTCO.</p></li>
+    <li><time datetime="2026-10">Oct 2026</time><p>Review on reconfigurable FETs and circuit design published in <a href="https://doi.org/10.1002/advs.78121"><em>Advanced Science</em></a>.</p></li>
+  </ol>
+</section>
 
 <section aria-labelledby="h-brief">
   <div class="twocol">
@@ -92,9 +117,9 @@
     <p class="small">Last updated November 2026.</p>
   </div>
 </footer>
-<script src="assets/site.js?v=202611151740"></script>
-<script src="assets/citations.js?v=202611151740"></script>
-<script src="assets/publications.js?v=202611151740"></script>
+<script src="assets/site.js?v=202611151803"></script>
+<script src="assets/citations.js?v=202611151803"></script>
+<script src="assets/publications.js?v=202611151803"></script>
 <script>
 (function(){
   var r=PUBS.filter(function(p){return p.t==="journal";}).sort(function(a,b){return b.y-a.y;}).slice(0,5);

@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&amp;family=Public+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=202611151740">
+<link rel="stylesheet" href="assets/style.css?v=202611151803">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -27,15 +27,21 @@
 </header>
 <main id="main" class="wrap">
 
-<header class="pagehead">
+<header class="hero-band pagehead-band"><svg class="hero-guide" viewBox="0 0 1600 300" preserveAspectRatio="xMaxYMax slice" aria-hidden="true">
+    <defs><linearGradient id="pulse2" x1="0" x2="1"><stop offset="0" stop-color="#5fd0c4" stop-opacity="0"/><stop offset=".5" stop-color="#9ff5ea" stop-opacity="1"/><stop offset="1" stop-color="#5fd0c4" stop-opacity="0"/></linearGradient>
+    <filter id="glow2" x="-50%" y="-200%" width="200%" height="500%"><feGaussianBlur stdDeviation="3"/></filter></defs>
+    <path class="g-bus" d="M-400 286 H1620"/>
+    <circle class="g-ring" cx="1300" cy="254" r="26"/><circle class="g-ring lit" cx="1380" cy="254" r="26"/><circle class="g-ring" cx="1460" cy="254" r="26"/>
+    <rect class="g-pulse" x="-700" y="282" width="300" height="8" rx="4" fill="url(#pulse2)" filter="url(#glow2)"/>
+  </svg><div class="pagehead">
   <h1>Research</h1>
   <p>Moore’s law is slowing, and the search is on for devices and architectures that can replace or complement the CMOS transistor at the heart of data processing. My work, as joint head of the Electronics group at INL, explores what advanced, emerging and alternative devices can contribute, and develops the design methods needed to evaluate them at system level.</p>
-</header>
+</div></header>
 
 <article class="theme" id="edge">
   <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="14" y="44" width="36" height="8" rx="1"/><path d="M24 44V14M32 44V14M40 44V14"/><path class="hot" stroke="currentColor" d="M20 22h24M20 32h24" stroke-width="3"/></svg>
   <div>
-    <h2>Energy-efficient edge computing with emerging devices</h2>
+    <h2>Energy-efficient edge computing with emerging devices</h2><figure class="theme-img"><img src="assets/writing/03.jpg" alt="Illustration: device roadmap from FinFET to 2D and reconfigurable FETs" loading="lazy"><figcaption>From <a href="writing.html">The Co-Optimized Silicon Stack</a></figcaption></figure>
     <p>Edge computing must deliver low-latency, secure processing as close as possible to the sensor, usually on a very limited energy budget. Reconfigurable and in-memory hardware accelerators placed in the acquisition or processing chain can reduce the load on the central core, and emerging devices offer new building blocks to make them far more efficient. They also invite us to revisit computing paradigms such as approximate, stochastic and neuromorphic computing.</p>
     <p>Earlier work exploited the extra terminal of double-gate devices for reconfigurability. Current work focuses on 3D logic with vertical nanowire FETs, which favour regular structures such as majority or pass-gate logic, and on HfO₂-based ferroelectric capacitors and FeFETs. These CMOS-compatible, fast, low-power non-volatile devices enable fine-grain logic-in-memory, “normally-off” computing and new energy-efficient computing paradigms.</p>
     <h3 class="sub">Highlights</h3>
@@ -55,7 +61,7 @@
 <article class="theme" id="photonics">
   <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M6 48h52"/><circle class="hot" cx="32" cy="30" r="13" stroke="currentColor" stroke-width="3"/><path d="M6 12h52"/></svg>
   <div>
-    <h2>Silicon photonics for high-performance and in-network computing</h2>
+    <h2>Silicon photonics for high-performance and in-network computing</h2><figure class="theme-img"><img src="assets/writing/04.jpg" alt="Illustration: electronic chip next to a co-packaged optical engine" loading="lazy"><figcaption>From <a href="writing.html">The Co-Optimized Silicon Stack</a></figcaption></figure>
     <p>Distributed manycore architectures, now driven by AI workloads, need organized high-speed communication between processors with aggregate data rates beyond 100 TB/s. Metallic interconnect is highly inefficient in this role, at around 1 pJ/bit/mm. On-chip optical data transport is a potential solution, and this research assesses where and how it pays off.</p>
     <p>Current work targets energy-efficient, broadcast-aware nanophotonic interconnect below 0.1 pJ/bit for an aggregate 100 TB/s, and photonic computing: matrix multiplication combining stochastic computing with phase-change materials on silicon photonics, reservoir computing, and photonic convolutional neural networks on lithium niobate on insulator.</p>
     <h3 class="sub">Highlights</h3>
@@ -75,7 +81,7 @@
 <article class="theme" id="dtco">
   <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><rect x="10" y="40" width="44" height="10" rx="1"/><rect x="16" y="27" width="32" height="10" rx="1"/><rect class="hot" x="22" y="14" width="20" height="10" rx="1" stroke="currentColor" stroke-width="3"/><path d="M32 24v3M32 37v3"/></svg>
   <div>
-    <h2>Design–technology co-optimization for heterogeneous integrated systems</h2>
+    <h2>Design–technology co-optimization for heterogeneous integrated systems</h2><figure class="theme-img"><img src="assets/writing/02.jpg" alt="Illustration: 3D chiplet stack with thermal path, die-to-die links and power delivery" loading="lazy"><figcaption>From <a href="writing.html">The Co-Optimized Silicon Stack</a></figcaption></figure>
     <p>“More-than-Moore” integration brings power management, sensing, actuation and biosensing from the board into the package or onto the chip, and 2.5D and monolithic 3D technologies multiply the opportunities. Design technology has not kept pace: partitioning, multi-physics simulation and co-design of heterogeneous parts remain open problems. The challenge is like searching for the centre of a vast three-dimensional maze with a flashlight and no map.</p>
     <p>This work develops ways to predictively extract and exploit system and circuit design information across physical domains, and applies them to multi-physics sensor hubs, 3D ICs and, now, system–technology co-optimization of chiplet-based and near-memory computing architectures.</p>
     <h3 class="sub">Highlights</h3>
@@ -102,7 +108,7 @@
     <p class="small">Last updated November 2026.</p>
   </div>
 </footer>
-<script src="assets/site.js?v=202611151740"></script>
+<script src="assets/site.js?v=202611151803"></script>
 
 </body>
 </html>

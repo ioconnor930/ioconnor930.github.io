@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600&amp;family=Public+Sans:wght@400;500;600&amp;display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/style.css?v=202611151740">
+<link rel="stylesheet" href="assets/style.css?v=202611151803">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
@@ -27,10 +27,16 @@
 </header>
 <main id="main" class="wrap">
 
-<header class="pagehead">
+<header class="hero-band pagehead-band"><svg class="hero-guide" viewBox="0 0 1600 300" preserveAspectRatio="xMaxYMax slice" aria-hidden="true">
+    <defs><linearGradient id="pulse2" x1="0" x2="1"><stop offset="0" stop-color="#5fd0c4" stop-opacity="0"/><stop offset=".5" stop-color="#9ff5ea" stop-opacity="1"/><stop offset="1" stop-color="#5fd0c4" stop-opacity="0"/></linearGradient>
+    <filter id="glow2" x="-50%" y="-200%" width="200%" height="500%"><feGaussianBlur stdDeviation="3"/></filter></defs>
+    <path class="g-bus" d="M-400 286 H1620"/>
+    <circle class="g-ring" cx="1300" cy="254" r="26"/><circle class="g-ring lit" cx="1380" cy="254" r="26"/><circle class="g-ring" cx="1460" cy="254" r="26"/>
+    <rect class="g-pulse" x="-700" y="282" width="300" height="8" rx="4" fill="url(#pulse2)" filter="url(#glow2)"/>
+  </svg><div class="pagehead">
   <h1>About</h1>
   <p>Biography, and a timeline of my career, responsibilities, projects and the events I have organised.</p>
-</header>
+</div></header>
 
 <section aria-labelledby="h-bio">
   <h2 id="h-bio" class="ih"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7 8-7s8 2.6 8 7"/></svg>Biography</h2>
@@ -75,9 +81,9 @@
     <p class="small">Last updated November 2026.</p>
   </div>
 </footer>
-<script src="assets/site.js?v=202611151740"></script>
-<script src="assets/timeline.js?v=202611151740"></script>
-<script src="assets/timeline-data.js?v=202611151740"></script>
+<script src="assets/site.js?v=202611151803"></script>
+<script src="assets/timeline.js?v=202611151803"></script>
+<script src="assets/timeline-data.js?v=202611151803"></script>
 <script>
 IOCTimeline(document.getElementById("tl-career"),{
   lanes:[{id:"career",label:"Career",color:"--lane-career"},{id:"resp",label:"Responsibilities",color:"--lane-resp"},
