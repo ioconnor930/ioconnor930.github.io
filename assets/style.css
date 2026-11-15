@@ -270,3 +270,32 @@ td strong{font-weight:600}
 .series h2 a:hover{color:var(--light);text-decoration:underline}
 .series p{margin:0 0 .4rem}
 .series .go{font-size:.88rem}
+
+/* ---------- icons ---------- */
+.ic{width:1.05em;height:1.05em;flex:none;vertical-align:-.15em}
+.ih{display:flex;align-items:center;gap:.55rem}
+h2.ih .ic{width:1.6rem;height:1.6rem;padding:.3rem;box-sizing:content-box;border-radius:6px;background:var(--light-soft);color:var(--light)}
+h3.ih .ic{width:1.1rem;height:1.1rem;color:var(--light)}
+.foot h2.ih .ic{width:1rem;height:1rem;padding:0;background:none;color:var(--light)}
+.links a{display:inline-flex;align-items:center;gap:.4rem}
+.links a .ic{width:1rem;height:1rem}
+.qwrap{position:relative;flex:1 1 18rem;display:flex}
+.qwrap .qi{position:absolute;left:.75rem;top:50%;transform:translateY(-50%);width:1.05rem;height:1.05rem;color:var(--muted);pointer-events:none}
+.qwrap input{padding-left:2.3rem;width:100%}
+.ico{width:.9em;height:.9em;margin-left:.2rem;vertical-align:-.1em}
+
+/* ---------- post images ---------- */
+.series{max-width:58rem}
+.series li{display:flex;gap:1.6rem;align-items:flex-start}
+.series .txt{flex:1;min-width:0}
+.shot{flex:none;width:13rem;margin:.2rem 0 0}
+.shot img{display:block;width:100%;height:auto;border-radius:6px;border:1px solid var(--rule);background:var(--surface)}
+.shot a:hover img{border-color:var(--light)}
+.teaser{display:flex;gap:1.2rem;align-items:center}
+.teaser .shot{width:9rem}
+.teaser p{margin:0}
+@media (max-width:700px){
+  .series li{flex-direction:column;gap:.6rem}
+  .shot{width:100%;max-width:22rem}
+  .teaser{flex-direction:column;align-items:flex-start}
+}

@@ -36,7 +36,7 @@ window.TL_DATA = [
 {lane:"resp",label:"Collège Numérique France 2030",s:"2023",e:null,detail:"Expert."},
 {lane:"resp",label:"IEEE CEDA VP Technical Activities",s:"2024",e:"2025"},
 {lane:"resp",label:"EDAA Vice-Chair",s:"2024",e:"2025"},
-{lane:"resp",label:"Associate Editor, IEEE TCASAI",s:"2024",e:"2025"},
+{lane:"resp",label:"Associate Editor, IEEE TCASAI",s:"2024",e:null,detail:"IEEE Transactions on Circuits and Systems for Artificial Intelligence, now in a second term."},
 {lane:"resp",label:"IEEE CEDA VP Publications",s:"2026",e:"2027"},
 {lane:"resp",label:"EDAA Chair",s:"2026",e:null},
 {lane:"resp",label:"Area Editor, IEEE TCAD",s:"2026",e:"2027",detail:"Circuits and Emerging Technologies."},
