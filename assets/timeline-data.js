@@ -4,7 +4,7 @@
 window.TL_DATA = [
 /* ---------------- Career and education ---------------- */
 {lane:"career",label:"BEng, University of Essex",s:"1990-07",pt:true,detail:"BEng Electronic Systems Engineering, University of Essex, Colchester (UK)."},
-{lane:"career",label:"MSc (European programme)",s:"1990-09",e:"1992-07",detail:"MSc Electrical Engineering, European programme: University of Essex (UK), ESIEE Paris (FR), Universität Karlsruhe (DE)."},
+{lane:"career",label:"MSc (European program)",s:"1990-09",e:"1992-07",detail:"MSc Electrical Engineering, European program: University of Essex (UK), ESIEE Paris (FR), Universität Karlsruhe (DE)."},
 {lane:"career",label:"Research and teaching assistant, ISEN Lille",s:"1993",e:"1997",detail:"Microelectronics Department, Institut Supérieur d'Electronique du Nord, Lille."},
 {lane:"career",label:"PhD, University of Lille",s:"1997-11",pt:true,detail:"PhD with distinction, “Automated design of current memory cells”. Director J.N. Decarpigny, advisor A. Kaiser."},
 {lane:"career",label:"Senior CAD Engineer, Philips Semiconductors",s:"1997",e:"1998",detail:"Design Technology Centre, Philips (now NXP) Semiconductors, Southampton (UK)."},
@@ -43,7 +43,7 @@ window.TL_DATA = [
 
 /* ---------------- Projects ---------------- */
 {lane:"proj",scope:"nat",label:"Heteropt",s:"2001",e:"2004",wp:true,role:"WP5 leader (circuit design)",detail:"RMNT. New technologies for heterogeneous integration of high-density optical links on silicon ICs."},
-{lane:"proj",scope:"reg",label:"Osmose",s:"2003",e:"2006",role:"Coordinator, WP4 leader",detail:"Tools for co-simulation, synthesis and modelling of systems on chip."},
+{lane:"proj",scope:"reg",label:"Osmose",s:"2003",e:"2006",role:"Coordinator, WP4 leader",detail:"Tools for co-simulation, synthesis and modeling of systems on chip."},
 {lane:"proj",scope:"reg",label:"EmSoC-Recherche",s:"2004",e:"2007",wp:true,role:"WP6 leader",detail:"Embedded systems: hardware architectures and heterogeneous design."},
 {lane:"proj",scope:"nat",label:"Nanosys",s:"2004",e:"2006",wp:true,role:"WP2 leader",detail:"ACI Nanosciences. Architectures for the integration of molecular nanodevices."},
 {lane:"proj",scope:"eu",label:"PICMOS",s:"2004",e:"2007",wp:true,role:"WP1 leader (system studies)",detail:"FP6-IST STReP, coordinated by IMEC. Photonic integration on CMOS."},
@@ -67,14 +67,14 @@ window.TL_DATA = [
 {lane:"proj",scope:"nat",label:"Octane",s:"2021",e:"2025",wp:true,role:"WP4 leader (system level)",detail:"ANR, coordinated by CEA-LETI. Silicon photonics stochastic matrix multiplier with phase-change materials."},
 {lane:"proj",scope:"eu",label:"FVLLMONTI",s:"2021",e:"2025",role:"INL coordinator, WP4 leader",detail:"H2020 FET-Open, coordinated by IMS Bordeaux. Ferroelectric vertical low-energy, low-latency, low-volume modules for neural-network transformers in 3D."},
 {lane:"proj",scope:"nat",label:"CHOOSE",s:"2022",e:"2026",role:"Coordinator, WP1 leader",detail:"PEPR Électronique. System–design–technology co-optimization."},
-{lane:"proj",scope:"nat",label:"PEPR IA",s:"2022",e:"2026",wp:true,role:"Steering committee member",detail:"Priority research and equipment programme on artificial intelligence."},
+{lane:"proj",scope:"nat",label:"PEPR IA",s:"2022",e:"2026",wp:true,role:"Steering committee member",detail:"Priority research and equipment program on artificial intelligence."},
 {lane:"proj",scope:"nat",label:"FerroFutures",s:"2024",e:"2028",role:"INL coordinator",detail:"PEPR Électronique, coordinated by IMS Bordeaux. Ferroelectric platform for critical embedded computing."},
 {lane:"proj",scope:"eu",label:"Ferro4EdgeAI",s:"2024",e:"2027",role:"INL coordinator, WP1 leader",detail:"Horizon Europe Digital-Emerging, coordinated by CEA-Saclay. Scalable ferroelectric accelerators for energy-efficient edge AI."},
 {lane:"proj",scope:"nat",label:"MultiSPIN",s:"2025",e:"2029",role:"INL coordinator",detail:"PEPR SPIN, coordinated by IPCMS. Van der Waals multiferroic heterostructures for logic-in-memory spintronic devices."},
 {lane:"proj",scope:"nat",label:"PHOENIX",s:"2026",e:"2031",role:"Scientific co-coordinator",detail:"France 2030 PEPR-Agence (17 M€). National hub for advanced IC design: chiplets, AI-augmented EDA, hardware–software co-design. Also INL coordinator for ChipMosaic and co-coordinator for TOTEM."},
 {lane:"proj",scope:"nat",label:"CAMELIA",s:"2026",e:"2031",role:"Co-coordinator, PC LEAF",detail:"France 2030 PEPR-Agence (35 M€). AI components: accelerators, chiplet chassis, hardware–software design stack."},
 
-/* ---------------- Organised events (main roles) ---------------- */
+/* ---------------- Organized events (main roles) ---------------- */
 {lane:"event",label:"FETCH (co-founder)",s:"2007-01",pt:true,role:"Co-founder, Program Chair",detail:"Francophone winter school on design technology for heterogeneous embedded systems, Villard-de-Lans. Program Chair again in 2008 and 2009, General Chair 2010, steering committee since."},
 {lane:"event",label:"TAISA 2007",s:"2007-10",pt:true,role:"General Chair",detail:"Lyon, France."},
 {lane:"event",label:"ISVLSI 2008",s:"2008-04",pt:true,role:"Program Chair",detail:"IEEE International Symposium on VLSI, Montpellier."},
