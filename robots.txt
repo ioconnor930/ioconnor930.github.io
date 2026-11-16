@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://ioconnor930.github.io/sitemap.xml
